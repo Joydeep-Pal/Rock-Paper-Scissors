@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dicee</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
+      rel="stylesheet"
+    />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    <div class="container">
+
+      <h1>choose your move</h1>
+
+      <div class="player">
+        <p>You</p>
+        <img class="img player_img" src="./images/rock.png" />
+      </div>
+
+      <div class="player">
+        <p>Ai</p>
+        <img class="img ai_img" src="./images/Rrock.png" />
+      </div>
+
+      <div class="button">
+        <h3> choose your move</h3>
+        <button class="btn" onclick="p_value1(); ai_value(); score();">
+          <img src="./images/r.png" />
+        </button>
+        <button class="btn" onclick="p_value2(); ai_value(); score();">
+          <img src="./images/p.png" />
+        </button>
+        <button class="btn" onclick="p_value3(); ai_value(); score();">
+          <img src="./images/s.png" />
+        </button>
+      </div>
+
+    </div>
+
+    <footer>made by JP</footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
