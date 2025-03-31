@@ -23,17 +23,29 @@ function ai_value(){
 
 // Player
 var p_score=1;
+
+document.querySelectorAll(".btn")[0].addEventListener("click",p_value1);
 function p_value1(){
     document.querySelector(".player_img").setAttribute("src","./images/rock.png");
     p_score=1;
+    ai_value();
+    score();
 }
+
+document.querySelectorAll(".btn")[1].addEventListener("click",p_value2);
 function p_value2(){
     document.querySelector(".player_img").setAttribute("src","./images/paper.png");
     p_score=2;
+    ai_value();
+    score();
 }
+
+document.querySelectorAll(".btn")[2].addEventListener("click",p_value3);
 function p_value3(){
     document.querySelector(".player_img").setAttribute("src","./images/scissors.png");
     p_score=3;
+    ai_value();
+    score();
 }
 
 
