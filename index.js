@@ -24,6 +24,7 @@ function ai_value(){
 // Player
 var p_score=1;
 
+// mouse click
 document.querySelectorAll(".btn")[0].addEventListener("click",p_value1);
 function p_value1(){
     document.querySelector(".player_img").setAttribute("src","./images/rock.png");
@@ -46,6 +47,29 @@ function p_value3(){
     p_score=3;
     ai_value();
     score();
+}
+
+// button down
+document.addEventListener("keydown",p_value1);
+function p_value1(){
+    if(event.key == 1){
+        document.querySelector(".player_img").setAttribute("src","./images/rock.png");
+        p_score=1;
+        ai_value();
+        score();
+    }
+    else if(event.key == 2){
+        document.querySelector(".player_img").setAttribute("src","./images/paper.png");
+        p_score=2;
+        ai_value();
+        score();
+    }
+    else if(event.key==3){
+        document.querySelector(".player_img").setAttribute("src","./images/scissors.png");
+        p_score=3;
+        ai_value();
+        score();
+    }
 }
 
 
