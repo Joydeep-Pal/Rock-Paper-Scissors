@@ -50,8 +50,8 @@ function p_value3(){
 }
 
 // button down
-document.addEventListener("keydown",p_value1);
-function p_value1(){
+document.addEventListener("keydown",p_key);
+function p_key(){
     if(event.key == 1){
         document.querySelector(".player_img").setAttribute("src","./images/rock.png");
         p_score=1;
